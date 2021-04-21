@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>
+        Nya Offiong's Portfolio
+    </title>
+    <Style>
+        html {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h2 {
+            color: white;
+            font-weight: 700;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h3 {
+            color: white;
+            font-weight: lighter;
+            text-align: left;
+            font-size: 20px;
+        }
+
+
+        .container {
+            background-color: whitesmoke;
+            width: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+            font-size: 20px;
+        }
+
+        li a {
+            display: block;
+            padding: 14px 16px;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a:hover {
+            background-color: whitesmoke;
+            color: red
+        }
+
+        .slider {
+            width: 100%;
+            height: 500px;
+        }
+
+        /**this is comment
+        .service {
+            width: 100%;
+            height: 1768px;
+            background-color: rgb(74, 105, 170);
+        }**/
+
+        .btn-more {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 5px;
+            border-radius: 25px;
+            color: white;
+            background-color: red;
+            width: 150px;
+            height: 40px;
+            font-weight: 700;
+            font-size: 22px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .btn-more:link {
+            color: white;
+        }
+
+        .btn-more:hover {
+            background-color: white;
+            color: black;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: red;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(2);
+            /* IE 9 */
+            -webkit-transform: scale(2);
+            /* Safari 3-8 */
+            transform: scale(2);
+            transform-origin: bottom left;
+            -moz-transform: scale(1, 1);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+        }
+
+        /**
+        .service {
+            display: flex;
+            padding: 20px;
+            width: auto;
+            margin: 20px;
+            flex-direction: row;
+            align-items: baseline;
+        }
+
+        .item1 {
+            background-color: rgb(99, 44, 44);
+            width: 418px;
+            height: 390px;
+            font-size: 46px;
+            color: black;
+            text-align: center;
+
+        }
+
+        .item2 {
+            background-color: rgb(19, 8, 8);
+            width: 418px;
+            height: 390px;
+            font-size: 46px;
+            color: black;
+            text-align: center;
+        }
+
+        .item3 {
+            background-color: rgb(14, 153, 67);
+            width: 418px;
+            height: 390px;
+            font-size: 46px;
+            color: black;
+            text-align: center;
+        }
+
+        .service2 {
+            display: flex;
+            padding: 20px;
+            height: auto;
+            width: auto;
+            margin: 20px;
+            flex-direction: row;
+            align-items: baseline;
+            ;
+
+        }
+
+        .item4 {
+            background-color: rgb(99, 44, 44);
+            width: 418px;
+            height: 390px;
+            font-size: 46px;
+            color: black;
+            text-align: center;
+
+        }
+
+        .item5 {
+            background-color: rgb(19, 8, 8);
+            width: 418px;
+            height: 390px;
+            font-size: 46px;
+            color: black;
+            text-align: center;
+        }
+
+        .item6 {
+            background-color: rgb(14, 153, 67);
+            width: 418px;
+            height: 390px;
+            font-size: 46px;
+            color: black;
+            text-align: center;
+        }
+**/
+        .service {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px 300px;
+            grid-gap: 2rem;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        .grid-item {
+            background-color: gray;
+            padding: 0 20px 0 20px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .contact-header {
+            background-color: black;
+            height: 300px;
+        }
+
+        .contact-link {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-weight: 700;
+            padding: 0px;
+        }
+
+
+        .column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        .item {
+            padding-top: 90px;
+            width: 50px;
+        }
+
+        /*
+        .column {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 90px;
+        }*/
+
+        .contact-details {
+            font-size: 2.4rem;
+            /*size of icons at contact*/
+            padding: 0 10px 0 10px;
+        }
+
+        .frontend {
+            background-color: gray;
+        }
+    </Style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="about"> About</a></li>
+        <li><a href="certifcations">Certifications</a></li>
+        <li><a href="projects"> Projects</a></li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
+    <div class="container">
+        <div><img src="web-development-banner.jpg" class="slider" /></div>
+        <div class="service">
+            <div class="grid-item">
+                <h3><i class="fas fa-user alt"> </i> &nbsp Front End Developer</h3>
+                An experienced Business Information System Experts with over 10 years of industry experiences.
+                Specialized in designing, developing, implementation, quality assurance and Tech-functional support
+                of
+                broad range of
+                Enterprise Resource Planning (ERP) and Web Applications. He is proficient in HTML, CSS and
+                JavaScript;
+                plus modern libraries
+                and frameworks. <p><br><a href="readmore" target="#">Read more >>></a></br></p>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fas fa-user alt"> </i>&nbsp ERP Consultant</h3>
+                An experienced Business Information System Experts with over 10 years of industry experiences.
+                Specialized in designing, developing, implementation, quality assurance and Tech-functional support of
+                broad range of
+                Enterprise Resource Planning (ERP) and Web Applications. He is proficient in HTML, CSS and JavaScript;
+                plus modern libraries
+                and frameworks. <p><br><a href="readmore" target="#"> Read more<i class="fas
+                            fa-chevron-right fas fa-chevron-right"></i></a></br></p>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fas fa-user alt"> </i> &nbsp Information System Auditing</h3>
+                An experienced Business Information System Experts with over 10 years of industry experiences.
+                Specialized in designing, developing, implementation, quality assurance and Tech-functional support of
+                broad range of
+                Enterprise Resource Planning (ERP) and Web Applications. He is proficient in HTML, CSS and JavaScript;
+                plus modern libraries
+                and frameworks. <p><br><a href="readmore" target="#">Read more >>></a></br></p>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fas fa-user alt"> </i> &nbsp Cyber Security</h3>
+                An experienced Business Information System Experts with over 10 years of industry experiences.
+                Specialized in designing, developing, implementation, quality assurance and Tech-functional support of
+                broad range of
+                Enterprise Resource Planning (ERP) and Web Applications. He is proficient in HTML, CSS and JavaScript;
+                plus modern libraries
+                and frameworks. <p><br><a href="readmore" target="#">Read more >>></a></br></p>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fas fa-user alt"> </i>&nbsp Multicloud Tech Expert</h3>
+                An experienced Business Information System Experts with over 10 years of industry experiences.
+                Specialized in designing, developing, implementation, quality assurance and Tech-functional support of
+                broad range of
+                Enterprise Resource Planning (ERP) and Web Applications. He is proficient in HTML, CSS and JavaScript;
+                and frameworks. <p><br><a href="readmore" target="#">Read more >>></a></br></p>
+            </div>
+            <div class="grid-item">
+                <h3><i class="fas fa-user alt"> </i> &nbsp Business Process Modeling Analyst</h3>
+                An experienced Business Information System Experts with over 10 years of industry experiences.
+                Specialized in designing, developing, implementation, quality assurance and Tech-functional support of
+                broad range of
+                Enterprise Resource Planning (ERP) and Web Applications. He is proficient in HTML, CSS and JavaScript;
+                plus modern libraries
+                and frameworks. <p><br><a href="readmore" target="#">Read more >>></a></br></p>
+            </div>
+        </div>
+        <div><a href="more" class="btn-more" target="#">Read more</a></div>
+        <div class="contact-header">
+            <h2>
+                <div> Let's work together....</div>
+            </h2>
+            <div class="contact-link">
+                <a href="www.facebook.com/nyaelliot" class="contact-details"><i
+                        class="fab fa-facebook-square"></i>facebook</a>
+                <a href="www.linkedin.com/nyaoffiong" class="contact-details"> <i
+                        class="fab fa-linkedin"></i>linkedin</a>
+                <a href="www.github.com/noffiong" class="contact-details"> <i class="fab fa-github"></i>Github</a>
+                <a href="+2349022271327" class="contact-details"> <i class="fas fa-mobile-alt"></i>Call </a>
+                <a href="mailto:nyaofin@gmail.com" class="contact-details"> <i class="fa fa-envelope"></i>email</a>
+            </div>
+            <div class="column contact-details">
+                <a href="amason.com" class="contact-details zoom"> <img src="AWS.png" alt="AWS certified"
+                        style="width:50px" height="40px" class="item" /></a>
+                <img src="sap.jpg" alt="SAP certified" style="width:50px" height="40px" class="item zoom" />
+                <img src="aviatrix.png" alt="aviatrix certified" style="width:50px" height="40px" class="item zoom" />
+                <img src="CISA.jpg" alt="CISA certified" style="width:50px" height="40px" class="item zoom" />
+                <img src="Microsoft.png" alt="Dyanmic 365 certified" style="width:50px" height="40px"
+                    class="item zoom" />
+                <img src="MCP.png" alt="MS Certified professional" style="width:50px" height="40px" class="item zoom" />
+                <img src="ccna.jpg" alt="Juniper Network Certified" style="width:50px" height="40px"
+                    class="item zoom" />
+                <img src="f51.png" alt="F5 Network Certified" style="width:50px" height="40px" class="item zoom" />
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
